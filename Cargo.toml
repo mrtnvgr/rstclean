@@ -1,0 +1,15 @@
+[package]
+name = "rstclean"
+version = "0.1.0"
+edition = "2021"
+description = "Rust artifacts cleaner"
+license = "GPL-3.0"
+repository = "https://github.com/mrtnvgr/rstclean"
+keywords = ["cli", "cache", "cargo"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+walkdir = "2.3.3"
+
+[profile.release]
+strip = true
